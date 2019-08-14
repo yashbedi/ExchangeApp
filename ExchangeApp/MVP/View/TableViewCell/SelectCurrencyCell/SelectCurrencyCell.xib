@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectCurrencyCell" rowHeight="115" id="KGk-i7-Jjw" customClass="SelectCurrencyCell" customModule="ExchangeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="482" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="482" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNF-WU-gX4">
+                        <rect key="frame" x="12" y="11.5" width="458" height="91.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdQ-xy-Ywn">
+                        <rect key="frame" x="92.5" y="46.5" width="41" height="21.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="41" id="ouk-hv-0ag"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.55607718229293823" green="0.58007293939590454" blue="0.60504728555679321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indian Rupee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8SV-ty-ZTJ">
+                        <rect key="frame" x="150.5" y="47" width="105" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="And-g7-axw">
+                        <rect key="frame" x="17" y="28.5" width="57.5" height="57.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="And-g7-axw" secondAttribute="height" multiplier="1:1" id="wgN-K6-49s"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="And-g7-axw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="01e-JW-dTL"/>
+                    <constraint firstItem="FdQ-xy-Ywn" firstAttribute="leading" secondItem="And-g7-axw" secondAttribute="trailing" constant="18" id="7OM-QP-kcO"/>
+                    <constraint firstItem="uNF-WU-gX4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="IMt-Zq-VzE"/>
+                    <constraint firstItem="uNF-WU-gX4" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="NJs-yK-XyC"/>
+                    <constraint firstItem="uNF-WU-gX4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NxR-ZK-jTG"/>
+                    <constraint firstItem="FdQ-xy-Ywn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YX7-zB-2tf"/>
+                    <constraint firstItem="8SV-ty-ZTJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dsw-qr-6Rf"/>
+                    <constraint firstItem="And-g7-axw" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="hql-A4-MQZ"/>
+                    <constraint firstItem="And-g7-axw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="iWH-fK-KU0"/>
+                    <constraint firstItem="8SV-ty-ZTJ" firstAttribute="leading" secondItem="FdQ-xy-Ywn" secondAttribute="trailing" constant="17" id="ypl-Uz-gTu"/>
+                    <constraint firstItem="uNF-WU-gX4" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.95" id="yvg-6q-5NR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countryImageView" destination="And-g7-axw" id="1pG-g8-mfu"/>
+                <outlet property="currencyCode" destination="FdQ-xy-Ywn" id="psi-Rd-5CA"/>
+                <outlet property="currencyWithCountry" destination="8SV-ty-ZTJ" id="6ZM-gB-tsU"/>
+                <outlet property="selectedView" destination="uNF-WU-gX4" id="UnB-03-oMM"/>
+            </connections>
+            <point key="canvasLocation" x="-52.173913043478265" y="96.763392857142847"/>
+        </tableViewCell>
+    </objects>
+</document>
